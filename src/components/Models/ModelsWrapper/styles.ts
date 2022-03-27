@@ -15,16 +15,4 @@ const OverlaysRoot = styled.div`
   bottom: 0;
 `;
 
-const ModelOverlay = styled.div`
-  position: sticky;
-  top: 0;
-
-  height: 100vh;
-  margin-top: -100vh;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
-
-export { Container, OverlaysRoot, ModelOverlay };
+export { Container, OverlaysRoot };
