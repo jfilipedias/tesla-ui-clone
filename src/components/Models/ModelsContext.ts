@@ -1,7 +1,7 @@
 import React from "react";
 
-interface CarModel {
-  name: string;
+export interface CarModel {
+  modelName: string;
   overlayNode: React.ReactNode;
   sectionRef: React.RefObject<HTMLElement>;
 }
@@ -11,7 +11,7 @@ interface ModelsContext {
   registeredModels: CarModel[];
   registerModel: (model: CarModel) => void;
   unregisterModel: (modelName: string) => void;
-  getModelByName: (modelName: string) => CarModel;
+  getModelByName: (modelName: string) => CarModel | undefined;
 }
 
 export default React.createContext<ModelsContext>({} as ModelsContext);
