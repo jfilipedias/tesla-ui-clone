@@ -2,6 +2,7 @@ import React from "react";
 
 import DefaultOverlayComponent from "../DefaultOverlayComponent";
 import { ModelsWrapper, ModelSection } from "../Models";
+import UniqueOverlay from "../UniqueOverlay";
 import { Container } from "./styles";
 
 interface Model {
@@ -45,7 +46,7 @@ const Page: React.FC = () => {
     <Container>
       <ModelsWrapper>
         <div>
-          {models.map((model) => (
+          {models.map(model => (
             <ModelSection
               key={model.name}
               className="colored"
